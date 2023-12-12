@@ -13,7 +13,7 @@ skellm_skeleton(
 )
 }
 \value{
-An object with class \code{skell_skeleton}.
+An object with class \code{skellm_skeleton}.
 }
 \description{
 This class handles the creation of LLM skeletons

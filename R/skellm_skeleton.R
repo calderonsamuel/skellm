@@ -8,7 +8,7 @@
 #' @slot stream Whether or not to stream the incomming response. FALSE by default.
 #' @slot api_key (Optional) The API key of the service. 
 #' 
-#' @returns An object with class `skell_skeleton`.
+#' @returns An object with class `skellm_skeleton`.
 #' 
 #' @export
 #' 
