@@ -12,26 +12,23 @@ skellm_skeleton(
   api_key = class_missing
 )
 }
+\arguments{
+\item{url}{The host's URL.}
+
+\item{model}{Identifier of the model to be used.}
+
+\item{history}{Messages to be included in the request. By default, is an empty \code{skellm_message_history} S7 object.}
+
+\item{stream}{Whether or not to stream the incomming response. FALSE by default.}
+
+\item{api_key}{(Optional) The API key of the service.}
+}
 \value{
 An object with class \code{skellm_skeleton}.
 }
 \description{
 This class handles the creation of LLM skeletons
 }
-\section{Slots}{
-
-\describe{
-\item{\code{url}}{The host's URL.}
-
-\item{\code{model}}{Identifier of the model to be used.}
-
-\item{\code{history}}{Messages to be included in the request. By default, is an empty \code{skellm_message_history} S7 object.}
-
-\item{\code{stream}}{Whether or not to stream the incomming response. FALSE by default.}
-
-\item{\code{api_key}}{(Optional) The API key of the service.}
-}}
-
 \examples{
 # For Ollama
 skellm_skeleton(

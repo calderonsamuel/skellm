@@ -2,9 +2,9 @@
 #' 
 #' This class represents a standard message format.
 #' 
-#' @slot role The role of the message's author. Typically one of "user", "system" or "assistant". We don't enforce a closed list of roles to offer more freedom.
-#' @slot content The content of the message.
-#' @slot name (Optional) The name of the message's author. Useful to differentiate between agents that have the same role.
+#' @param role The role of the message's author. Typically one of "user", "system" or "assistant". We don't enforce a closed list of roles to offer more freedom.
+#' @param content The content of the message.
+#' @param name (Optional) The name of the message's author. Useful to differentiate between agents that have the same role.
 #' 
 #' @returns An object with class `skellm_message`
 #' 

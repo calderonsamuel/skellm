@@ -10,22 +10,19 @@ skellm_message(
   name = class_missing
 )
 }
+\arguments{
+\item{role}{The role of the message's author. Typically one of "user", "system" or "assistant". We don't enforce a closed list of roles to offer more freedom.}
+
+\item{content}{The content of the message.}
+
+\item{name}{(Optional) The name of the message's author. Useful to differentiate between agents that have the same role.}
+}
 \value{
 An object with class \code{skellm_message}
 }
 \description{
 This class represents a standard message format.
 }
-\section{Slots}{
-
-\describe{
-\item{\code{role}}{The role of the message's author. Typically one of "user", "system" or "assistant". We don't enforce a closed list of roles to offer more freedom.}
-
-\item{\code{content}}{The content of the message.}
-
-\item{\code{name}}{(Optional) The name of the message's author. Useful to differentiate between agents that have the same role.}
-}}
-
 \examples{
 skellm_message(role = "system", content = "You are a helpful assistant")
 skellm_message(role = "user", content = "What is 2 + 2")

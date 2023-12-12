@@ -2,11 +2,11 @@
 #' 
 #' This class handles the creation of LLM skeletons
 #' 
-#' @slot url The host's URL.
-#' @slot model Identifier of the model to be used.
-#' @slot history Messages to be included in the request. By default, is an empty `skellm_message_history` S7 object.
-#' @slot stream Whether or not to stream the incomming response. FALSE by default.
-#' @slot api_key (Optional) The API key of the service. 
+#' @param url The host's URL.
+#' @param model Identifier of the model to be used.
+#' @param history Messages to be included in the request. By default, is an empty `skellm_message_history` S7 object.
+#' @param stream Whether or not to stream the incomming response. FALSE by default.
+#' @param api_key (Optional) The API key of the service. 
 #' 
 #' @returns An object with class `skellm_skeleton`.
 #' 
