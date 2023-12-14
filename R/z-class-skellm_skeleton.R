@@ -56,6 +56,10 @@ skellm_skeleton <- S7::new_class(
 			class = NULL | S7::class_character,
 			validator = prop_scalar_validator("character", allow_null = TRUE),
 			default = NULL
+		),
+		extra = S7::new_property(
+			class = S7::class_list,
+			default = list()
 		)
 	)
 )
