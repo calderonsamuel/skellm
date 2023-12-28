@@ -64,3 +64,20 @@ skellm_skeleton <- S7::new_class(
 	)
 )
 
+openai_chat_skeleton <- S7::new_class(
+	name = "openai_chat_skeleton",
+	parent = skellm_skeleton,
+	constructor = function(url, model, history = skellm_message_history(), stream = FALSE, api_key = NULL, ...) {
+		S7::new_object(
+			skellm_skeleton(
+				url = url,
+				model = model,
+				history = history,
+				stream = stream,
+				api_key = api_key,
+				extra = rlang::list2(...)
+			)
+		)
+	}
+)
+

@@ -3,6 +3,7 @@
 export("%>%")
 export(skellm_message)
 export(skellm_message_history)
+export(skellm_req_perform)
 export(skellm_skeleton)
 if (getRversion() < "4.3.0") importFrom("S7", "@")
 importFrom(magrittr,"%>%")
